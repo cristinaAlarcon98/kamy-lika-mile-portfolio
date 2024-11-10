@@ -11,7 +11,7 @@ export default function Home() {
     <div  style={{
       position: 'fixed',
       top: '10px',
-      left: '10px',
+      left: '20px',
       zIndex: 1000,
       color: '#fff',
       padding: '10px',
@@ -23,14 +23,14 @@ export default function Home() {
     <div  style={{
       position: 'fixed',
       top: '10px',
-      right: '10px',
+      right: '20px',
       zIndex: 1000,
       color: '#fff',
       padding: '10px',
       cursor: 'pointer'
     }}>
-     <IconButton style={{ color: 'var(--primary)' }}>
-      <MenuRoundedIcon />
+     <IconButton style={{ color: 'var(--primary)'}}>
+      <MenuRoundedIcon  />
      </IconButton>
     </div>
     <WhoIamPage/>

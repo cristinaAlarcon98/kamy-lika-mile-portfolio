@@ -2,6 +2,7 @@
 
 import { ReactLenis, useLenis } from 'lenis/react';
 import { Button } from "@/components/ui/button"
+import TextComponent from '@/components/gsap/TextComponent';
 
 
 
@@ -18,10 +19,12 @@ export function WhoIamPage() {
         
        
         <section style={{ height: '600px',marginBottom:'120px' ,display:'flex', justifyContent:'center', alignItems:'center'}}>
-        <h2>HI, LOVELY TO VIRTUALLY MEET YOU</h2>
-        </section>
+        {/* <h2>CREATIVITY - EMOTIONALITY - PASSION
+        </h2> */}
+<TextComponent />
+</section>
 
-        <section style={{ height: '800px', backgroundColor: '#e0e0e0', padding: '20px' }}>
+        <section style={{ backgroundColor: 'black',height: '800px', padding: '20px' }}>
           <h2>Section 2</h2>
           <p>This is another section with more content. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </section>
