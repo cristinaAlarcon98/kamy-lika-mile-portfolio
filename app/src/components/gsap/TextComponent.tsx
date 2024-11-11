@@ -29,12 +29,12 @@ const TextComponent = () => {
       tlMaster.add(tlText);
     });
   }, []);
- //  <h2 ref={cursorRef} id="cursor">|</h2>
+ //  
   return (
-    <div>
-      <h2 ref={animatedTextRef} className="animated-text"></h2>
-   
-    </div>
+    <div style={{ display: "flex", alignItems: "center" }}> {/* Use flex for alignment */}
+    <h2 ref={animatedTextRef} className="animated-text"></h2>
+    <span ref={cursorRef} id="cursor" style={{ marginLeft: "5px" }}>_</span> {/* Add margin for spacing */}
+  </div>
   );
 };
 
