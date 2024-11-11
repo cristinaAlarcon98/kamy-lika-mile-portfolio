@@ -1,14 +1,18 @@
-// components/Text.tsx
+
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
-
-const words = ["CREATIVITY", "EMOTIONALITY", "PASSION"];
+type Props = {
+  words: string[];
+};
+//const words = ["CREATIVITY", "EMOTIONALITY", "PASSION"];
 gsap.registerPlugin(TextPlugin);
 
-const TextComponent = () => {
+const TypeWriterText: React.FC<Props> = ({words}) => {
   const animatedTextRef = useRef<HTMLDivElement>(null);
   const cursorRef = useRef<HTMLDivElement>(null);
+
+  
 
   useEffect(() => {
     // Cursor animation
@@ -29,13 +33,12 @@ const TextComponent = () => {
       tlMaster.add(tlText);
     });
   }, []);
- //  
+ //    <span ref={cursorRef} id="cursor" style={{ marginLeft: "5px" }}>_</span> 
   return (
-    <div style={{ display: "flex", alignItems: "center" }}> {/* Use flex for alignment */}
-    <h2 ref={animatedTextRef} className="animated-text"></h2>
-    <span ref={cursorRef} id="cursor" style={{ marginLeft: "5px" }}>_</span> {/* Add margin for spacing */}
+    <div style={{ display: "flex", alignItems: "center"}}> 
+    <h2 ref={animatedTextRef} className="animated-text" ></h2>
   </div>
   );
 };
 
-export default TextComponent;
+export default TypeWriterText;

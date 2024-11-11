@@ -57,8 +57,8 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
 		fontFamily:{
-			roboto: ["Roboto Condensed", "sans-serif"],
-			anton:["Anton", "sans-serif"]
+			anton:["Anton", "sans-serif"],
+			cutive:["Cutive", "serif"]
 		}
   	}
   },

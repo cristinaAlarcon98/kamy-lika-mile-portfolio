@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { ReactLenis, useLenis } from 'lenis/react';
 import { Button } from "@/components/ui/button";
-import WhoIamPage from "@/pages/WhoIamPage";
+import WhoIam from "@/pages/WhoIAm";
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import IconButton from '@mui/material/IconButton';
 
 export default function Home() {
   return (
-    <ReactLenis   root >
+    <ReactLenis   root  >
     <div  style={{
       position: 'fixed',
       top: '10px',
@@ -33,7 +33,7 @@ export default function Home() {
       <MenuRoundedIcon  />
      </IconButton>
     </div>
-    <WhoIamPage/>
+    <WhoIam/>
     </ReactLenis>
   );
 }
