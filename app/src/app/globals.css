@@ -18,13 +18,15 @@ h2{
   color: var(--primary)
 }
 p{
-  font-size:15px;
+  font-size:13px;
   color: var(--primary);
   font-family: Cutive, serif;
-  color: var(--primary);
+ 
 }
 span{
-  
+  color: var(--primary);
+  font-family: Cutive, serif;
+
 
 }
 
@@ -36,9 +38,9 @@ span{
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
-    --primary: #FAFF00;
+    --primary: #c1b956;
     --primary-foreground: #000303;
-    --secondary: 0 0% 96.1%;
+    --secondary: #6d180f;
     --secondary-foreground: 0 0% 9%;
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;

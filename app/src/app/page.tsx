@@ -18,7 +18,7 @@ export default function Home() {
       cursor: 'pointer',
       
     }}>
-      <h1>KML</h1>
+      <h1>KAMYLIKAMILE</h1>
     </div>
     <div  style={{
       position: 'fixed',

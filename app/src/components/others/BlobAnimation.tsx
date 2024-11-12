@@ -6,9 +6,9 @@ const BlobAnimation = () => {
   return (
    <div className="blob">
       <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <path fill="#FAFF00" transform="translate(100 100)">
+        <path fill="var(--secondary)" transform="translate(100 100)">
           <animate attributeName="d"
-            dur="10000ms"
+            dur="5000ms"
             repeatCount="indefinite"
             values="M26.2,-36.8C35.9,-29.1,47,-24,57.5,-13.5C68.1,-3,78,12.8,
             74.3,24.1C70.5,35.4,53,42.2,38.4,46.1C23.7,50.1,11.9,51.2,0,
