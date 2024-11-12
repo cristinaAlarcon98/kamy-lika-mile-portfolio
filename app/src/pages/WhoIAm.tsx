@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import TypeWriterText from '@/components/gsap/TypeWriterText';
 import VolleyImg from '@/assets/images/volley.png'
 import Image from 'next/image';
+import BlobAnimation from '@/components/others/BlobAnimation';
 
 
 
@@ -21,16 +22,28 @@ export function WhoIamPage() {
         <TypeWriterText words={["CREATIVITY", "EMOTIONALITY", "PASSION"]}  />
         </section>
 
-        <section style={{ backgroundColor: 'black', height: '70vh', padding: '20px', position:'relative' }}>
-          <div style={{position:'absolute', minWidth:'300px', left:'100px', top:'30px', height:'400px', width:'300px'}}>
-          <Image src="/images/volley.png" alt="Volleyball Image" fill={true}/>
-          </div>
-          <div style={{position:'absolute', left:'400px', top:'400px', width:'400px' }}>
-          <p>
-          Creativity encompasses the ability to discover new and original ideas, connections, and solutions to problems. My judgments are insightful and my perceptions are fresh.
-            </p>
+        <section className="bg-black h-[90vh] p-5 ">
+          <div className="container mx-auto">
+            <div className="flex flex-col md:flex-row pl-[10%]">
+              <div className="w-full md:w-5/12 relative">
+               <div className='absolute bottom-11 left-[-13rem] z-5 w-[50vh] h-[50vh]'>
+                <BlobAnimation ></BlobAnimation>
+                </div> 
+                <img src="/images/volley.png" 
+                  alt="Volleyball Image" 
+                  className="h-[50vh] w-auto relative z-10" />
+              </div>
+              <div className="w-full md:w-7/12 mt-5 md:mt-0  px-5 flex items-end	">
+                <p className="text-white text-right">
+                  Creativity encompasses the ability to discover new and original ideas, connections, and solutions to problems. My judgments are insightful and my perceptions are fresh.
+                </p>
+              </div>
+      
+    
+            </div>
           </div>
         </section>
+
 
         <section style={{ height: '800px', backgroundColor: '#d0d0d0', padding: '20px' }}>
           <img></img>
