@@ -29,7 +29,7 @@ export default function Home() {
       padding: '10px',
       cursor: 'pointer'
     }}>
-     <IconButton style={{ color: 'var(--primary)'}}>
+     <IconButton className="bg-primary">
       <MenuRoundedIcon  />
      </IconButton>
     </div>
