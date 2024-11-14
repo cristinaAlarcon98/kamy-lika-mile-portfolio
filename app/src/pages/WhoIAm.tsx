@@ -1,11 +1,15 @@
 "use client"; // This line ensures the component is rendered on the client side
+import HorizontalScroll from '@/components/gsap/HorizontalScroll';
 import TypeWriterText from '@/components/gsap/TypeWriterText';
 import BlobAnimation from '@/components/others/BlobAnimation';
+import { ReactLenis, useLenis } from 'lenis/react';
+
 
 export function WhoIamPage() {
-  
+ 
   return (
-    <div className="pt-[100px] bg-[#000303] min-w-[420px]">
+   // <ReactLenis root options={{orientation:'vertical'}}>
+    <div className="pt-[100px] bg-[#000303] min-w-[420px] w-[100wv]">
     <section className="h-screen flex justify-center items-center">
       <TypeWriterText words={["CREATIVITY", "EMOTIONALITY", "PASSION"]} />
     </section>
@@ -39,16 +43,48 @@ export function WhoIamPage() {
                   Creativity encompasses the  ability to  the  ability to discover new and <span >original ideas</span>, connections, and solutions to problems. My judgments are <span>insightful</span> and my perceptions are <span>fresh</span> .
                 </p>
               </div>
-              <div className="w-full md:w-7/12 relative pl-[5%]">
-                <img src="/images/volley.png" 
-                  alt="Volleyball Image" 
-                  className="h-[60vh] w-auto relative z-10" />
-              </div>
+            
+          {/* <ReactLenis root options={{orientation:'vertical'}} >
+          <div  id='horizontal' className="w-full md:w-7/12 relative pl-[5%] overflow-x-scroll">
+            
+            <div className="slides flex space-x-4">
+              <img src="/images/volley.png" alt="Volleyball Image" className="h-[60vh] w-auto relative z-10" />
+              <img src="/images/volley.png" alt="Volleyball Image" className="h-[60vh] w-auto relative z-10" />
+              <img src="/images/volley.png" alt="Volleyball Image" className="h-[60vh] w-auto relative z-10" />
+              <img src="/images/volley.png" alt="Volleyball Image" className="h-[60vh] w-auto relative z-10" />
+            </div>
+        </div>
+           */}
+
+          <HorizontalScroll></HorizontalScroll>
+          
+          
              
             </div>
           </div>
         </section>
-      </div>
+
+        <section className="bg-primary-foreground h-[90vh] p-5 ">
+          <div className="container mx-auto">
+            <div className="flex flex-col md:flex-row pl-[10%]">
+              <div className="w-full md:w-5/12 relative">
+               <div className='absolute bottom-11 left-[-12rem] z-5 w-[55vh] h-[55vh]'>
+                <BlobAnimation ></BlobAnimation>
+                </div> 
+                <img src="/images/volley.png" 
+                  alt="Volleyball Image" 
+                  className="h-[60vh] w-auto relative z-10" />
+              </div>
+              <div className="w-full md:w-7/12 mt-5 md:mt-0  px-[10%] flex items-end	">
+                <p className="text-white text-right">
+                  Creativity encompasses the  ability to  the  ability to discover new and <span >original ideas</span>, connections, and solutions to problems. My judgments are <span>insightful</span> and my perceptions are <span>fresh</span> .
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        </div>
+  //      </ReactLenis>
    
   );
 }

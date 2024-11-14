@@ -7,8 +7,8 @@ import IconButton from '@mui/material/IconButton';
 
 export default function Home() {
   return (
-    <ReactLenis   root  >
-    <div  style={{
+    <ReactLenis root>
+      <div  style={{
       position: 'fixed',
       top: '10px',
       left: '20px',
@@ -35,6 +35,7 @@ export default function Home() {
     </div>
     <WhoIam/>
     </ReactLenis>
+    
   );
 }
 
