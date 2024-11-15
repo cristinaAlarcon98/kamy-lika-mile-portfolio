@@ -37,30 +37,15 @@ export function WhoIamPage() {
 
         <section className="bg-primary-foreground h-[90vh] p-5 ">
           <div className="container mx-auto">
-            <div className="flex flex-col md:flex-row ">
-            <div className="w-full md:w-5/12 mt-5 md:mt-0  pr-[10%] flex items-end	">
-                <p className="text-white text-right">
-                  Creativity encompasses the  ability to  the  ability to discover new and <span >original ideas</span>, connections, and solutions to problems. My judgments are <span>insightful</span> and my perceptions are <span>fresh</span> .
-                </p>
-              </div>
             
-          {/* <ReactLenis root options={{orientation:'vertical'}} >
-          <div  id='horizontal' className="w-full md:w-7/12 relative pl-[5%] overflow-x-scroll">
+           
             
-            <div className="slides flex space-x-4">
-              <img src="/images/volley.png" alt="Volleyball Image" className="h-[60vh] w-auto relative z-10" />
-              <img src="/images/volley.png" alt="Volleyball Image" className="h-[60vh] w-auto relative z-10" />
-              <img src="/images/volley.png" alt="Volleyball Image" className="h-[60vh] w-auto relative z-10" />
-              <img src="/images/volley.png" alt="Volleyball Image" className="h-[60vh] w-auto relative z-10" />
-            </div>
-        </div>
-           */}
 
-          <HorizontalScroll></HorizontalScroll>
+                  <HorizontalScroll></HorizontalScroll>
           
           
              
-            </div>
+           
           </div>
         </section>
 
