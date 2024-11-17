@@ -15,13 +15,16 @@ function HorizontalScroll() {
           // gsap code here...
           gsap.to(".slides", {
             x: -(850),
+            duration: 8,
             scrollTrigger: {
               trigger: ".slides-container",
               start: "center center",
-              end: "bottom center",     
+             // end: "bottom center",     
+             end:"+=3000",
               scrub: 1,
               pin: true,
-             // markers: true
+             // 
+             markers: true
             }
           }); 
     
@@ -30,7 +33,7 @@ function HorizontalScroll() {
             scrollTrigger: {
               trigger: ".text-element",
               start: "center center",
-              end: "bottom center",     
+              end:"+=3000",    
               scrub: 1,
               pin: true,
              // markers: true
