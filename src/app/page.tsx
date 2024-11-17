@@ -29,7 +29,7 @@ export default function Home() {
       cursor: 'pointer'
     }}>
      <IconButton >
-      <MenuRoundedIcon className="fill-[var(--primary)]"  />
+      <MenuRoundedIcon  className="bg-primary"  />
      </IconButton>
     </div>
     <WhoIam/>

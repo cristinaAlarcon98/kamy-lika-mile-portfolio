@@ -21,7 +21,7 @@ function HorizontalScroll() {
               end: "bottom center",     
               scrub: 1,
               pin: true,
-              markers: true
+             // markers: true
             }
           }); 
     
