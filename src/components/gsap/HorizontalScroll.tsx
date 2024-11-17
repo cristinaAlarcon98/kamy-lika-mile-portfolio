@@ -2,9 +2,10 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
 
 const HorizontalScroll = () => {
+  gsap.registerPlugin(ScrollTrigger);
+
   const slidesContainerRef = useRef(null);
   const slidesRef = useRef(null);
   const textRef = useRef(null);

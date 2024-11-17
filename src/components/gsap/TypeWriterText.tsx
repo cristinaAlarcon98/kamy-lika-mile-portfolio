@@ -6,9 +6,10 @@ import { TextPlugin } from "gsap/TextPlugin";
 type Props = {
   words: string[];
 };
-gsap.registerPlugin(TextPlugin);
+
 
 const TypeWriterText: React.FC<Props> = ({words}) => {
+  gsap.registerPlugin(TextPlugin);
   const animatedTextRef = useRef<HTMLDivElement>(null);
   const cursorRef = useRef<HTMLDivElement>(null);
 
