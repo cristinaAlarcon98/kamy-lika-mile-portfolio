@@ -4,8 +4,8 @@ import { ReactLenis, useLenis } from 'lenis/react';
 import dynamic from 'next/dynamic';
 import TypeWriterText from '../components/gsap/TypeWriterText';
 import BlobAnimation from '../components/others/BlobAnimation';
+import HorizontalScroll from '../components/gsap/HorizontalScroll';
 
-const HorizontalScroll = dynamic(() => import('../components/gsap/HorizontalScroll'), { ssr: false });
 
 
 
