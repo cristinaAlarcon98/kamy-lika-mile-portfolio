@@ -20,7 +20,7 @@ const HorizontalScroll = () => {
           trigger: slidesContainerElemet,
           start: "center center",
           end: "bottom center",     
-          scrub: 2,
+          scrub: 1,
           pin: true,
        //   markers: true
         }
@@ -32,7 +32,7 @@ const HorizontalScroll = () => {
           trigger: textElement,
           start: "center center",
           end: "bottom center",     
-          scrub: 2,
+          scrub: 1,
           pin: true,
          // markers: true
         }
