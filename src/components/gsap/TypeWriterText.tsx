@@ -1,7 +1,8 @@
 
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { TextPlugin } from "gsap/TextPlugin";
+import { TextPlugin } from "./esm/TextPlugin";
+
 gsap.registerPlugin(TextPlugin);
 
 
