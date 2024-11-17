@@ -41,7 +41,7 @@ export function WhoIamPage() {
 
         <section className="bg-primary-foreground h-[100vh] p-5 mb-[200px]">
           <div className="container mx-auto">
-          <HorizontalScroll></HorizontalScroll>
+          {/* <HorizontalScroll></HorizontalScroll> */}
 
           </div>
         </section>
