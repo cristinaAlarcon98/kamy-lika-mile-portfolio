@@ -1,11 +1,11 @@
 "use client"; // This line ensures the component is rendered on the client side
 
-import TypeWriterText from '@/components/gsap/TypeWriterText';
-import BlobAnimation from '@/components/others/BlobAnimation';
 import { ReactLenis, useLenis } from 'lenis/react';
 import dynamic from 'next/dynamic';
+import TypeWriterText from '../components/gsap/TypeWriterText';
+import BlobAnimation from '../components/others/BlobAnimation';
 
-const HorizontalScroll = dynamic(() => import('@/components/gsap/HorizontalScroll'), { ssr: false });
+const HorizontalScroll = dynamic(() => import('../components/gsap/HorizontalScroll'), { ssr: false });
 
 
 

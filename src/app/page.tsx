@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { ReactLenis, useLenis } from 'lenis/react';
-import { Button } from "@/components/ui/button";
-import WhoIam from "@/pages/WhoIAm";
+import WhoIam from "../pages/WhoIAm";
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import IconButton from '@mui/material/IconButton';
 
