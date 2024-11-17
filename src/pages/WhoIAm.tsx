@@ -24,7 +24,7 @@ export function WhoIamPage() {
             <div className="flex flex-col md:flex-row pl-[10%]">
               <div className="w-full md:w-5/12 relative">
                <div className='absolute bottom-11 left-[-12rem] z-5 w-[55vh] h-[55vh]'>
-                <BlobAnimation ></BlobAnimation>
+                <BlobAnimation fillColor="var(--secondary)" ></BlobAnimation>
                 </div> 
                 <img src="/images/volley.png" 
                   alt="Volleyball Image" 
@@ -52,7 +52,7 @@ export function WhoIamPage() {
             <div className="flex flex-col md:flex-row pl-[10%]">
               <div className="w-full md:w-5/12 relative">
                <div className='absolute bottom-11 left-[-12rem] z-5 w-[55vh] h-[55vh]'>
-                <BlobAnimation ></BlobAnimation>
+                <BlobAnimation  fillColor='#3f72b1'></BlobAnimation>
                 </div> 
                 <img src="/images/volley.png" 
                   alt="Volleyball Image" 
