@@ -29,8 +29,8 @@ export default function Home() {
       padding: '10px',
       cursor: 'pointer'
     }}>
-     <IconButton className="bg-primary">
-      <MenuRoundedIcon  />
+     <IconButton >
+      <MenuRoundedIcon className="fill-[var(--primary)]"  />
      </IconButton>
     </div>
     <WhoIam/>

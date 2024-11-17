@@ -1,8 +1,12 @@
 "use client"; // This line ensures the component is rendered on the client side
-import HorizontalScroll from '@/components/gsap/HorizontalScroll';
+
 import TypeWriterText from '@/components/gsap/TypeWriterText';
 import BlobAnimation from '@/components/others/BlobAnimation';
 import { ReactLenis, useLenis } from 'lenis/react';
+import dynamic from 'next/dynamic';
+
+const HorizontalScroll = dynamic(() => import('@/components/gsap/HorizontalScroll'), { ssr: false });
+
 
 
 export function WhoIamPage() {
@@ -35,21 +39,14 @@ export function WhoIamPage() {
         </section>
 
 
-        <section className="bg-primary-foreground h-[90vh] p-5 ">
+        <section className="bg-primary-foreground h-[90vh] p-5">
           <div className="container mx-auto">
-            
-           
-            
+          <HorizontalScroll></HorizontalScroll>
 
-                  <HorizontalScroll></HorizontalScroll>
-          
-          
-             
-           
           </div>
         </section>
 
-        <section className="bg-primary-foreground h-[90vh] p-5 ">
+        <section className="bg-primary-foreground h-[90vh] p-5  ">
           <div className="container mx-auto">
             <div className="flex flex-col md:flex-row pl-[10%]">
               <div className="w-full md:w-5/12 relative">

@@ -1,11 +1,12 @@
+"use client"
 
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
+
 type Props = {
   words: string[];
 };
-//const words = ["CREATIVITY", "EMOTIONALITY", "PASSION"];
 gsap.registerPlugin(TextPlugin);
 
 const TypeWriterText: React.FC<Props> = ({words}) => {
@@ -16,13 +17,14 @@ const TypeWriterText: React.FC<Props> = ({words}) => {
 
   useEffect(() => {
     // Cursor animation
+/*     console.log()
     gsap.to(cursorRef.current, {
       opacity: 0,
       repeat: -1,
       yoyo: true,
       duration: 0.5,
       ease: "power2.inOut",
-    });
+    }); */
 
     // Text animation
     const tlMaster = gsap.timeline({ repeat: -1 });
