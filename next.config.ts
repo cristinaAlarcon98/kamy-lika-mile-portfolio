@@ -1,9 +1,7 @@
-const withTM = require("next-transpile-modules")(["gsap"]); // Transpile GSAP
+import type { NextConfig } from "next";
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  // Add other Next.js config options if needed
+const nextConfig: NextConfig = {
+  /* config options here */
 };
 
-module.exports = withTM(nextConfig);
+export default nextConfig;

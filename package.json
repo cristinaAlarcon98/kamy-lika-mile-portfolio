@@ -20,12 +20,10 @@
     "lenis": "^1.1.16",
     "lucide-react": "^0.456.0",
     "next": "15.0.3",
-    "next-transpile-modules": "^10.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tailwind-merge": "^2.5.4",
-    "tailwindcss-animate": "^1.0.7",
-    "text-plugin": "^0.2.1"
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
