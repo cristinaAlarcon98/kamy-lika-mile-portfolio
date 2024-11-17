@@ -16,13 +16,14 @@ const HorizontalScroll = () => {
 
      gsap.to(slidesElement, {
         x: -(850),
+        duration:10000,
         scrollTrigger: {
           trigger: slidesContainerElemet,
           start: "center center",
           end: "bottom center",     
           scrub: 1,
           pin: true,
-       //   markers: true
+          markers: true
         }
       }); 
 
