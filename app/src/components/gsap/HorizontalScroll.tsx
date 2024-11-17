@@ -22,7 +22,7 @@ const HorizontalScroll = () => {
           end: "bottom center",     
           scrub: 2,
           pin: true,
-          markers: true
+       //   markers: true
         }
       }); 
 
@@ -34,7 +34,7 @@ const HorizontalScroll = () => {
           end: "bottom center",     
           scrub: 2,
           pin: true,
-          markers: true
+         // markers: true
         }
       }); 
 
@@ -52,7 +52,7 @@ const HorizontalScroll = () => {
          <div className="w-full md:w-5/12 mt-5 md:mt-0  pr-[10%] ">
              <div ref={textRef}  className="flex items-end h-[60vh]">
             <p  className="text-white text-right ">
-                Creativity encompasses the  ability to  the  ability to discover new and <span >original ideas</span>, connections, and solutions to problems. My judgments are <span>insightful</span> and my perceptions are <span>fresh</span> .
+            The emotionality of the <span>artistic</span> temperament. My field is <span>sports</span>, but my thinking is <span>artistic</span>. These two niches combined into one can reveal <span>undiscovered layers</span>.
             </p>
             </div> 
         </div> 

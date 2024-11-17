@@ -39,14 +39,14 @@ export function WhoIamPage() {
         </section>
 
 
-        <section className="bg-primary-foreground h-[90vh] p-5">
+        <section className="bg-primary-foreground h-[100vh] p-5 mb-[200px]">
           <div className="container mx-auto">
           <HorizontalScroll></HorizontalScroll>
 
           </div>
         </section>
 
-        <section className="bg-primary-foreground h-[90vh] p-5  ">
+        <section className="bg-primary-foreground h-[100vh] p-5  ">
           <div className="container mx-auto">
             <div className="flex flex-col md:flex-row pl-[10%]">
               <div className="w-full md:w-5/12 relative">
@@ -59,7 +59,7 @@ export function WhoIamPage() {
               </div>
               <div className="w-full md:w-7/12 mt-5 md:mt-0  px-[10%] flex items-end	">
                 <p className="text-white text-right">
-                  Creativity encompasses the  ability to  the  ability to discover new and <span >original ideas</span>, connections, and solutions to problems. My judgments are <span>insightful</span> and my perceptions are <span>fresh</span> .
+                Picking the berries of life to the fullest is my <span>passion</span>. Also, I'm a amateur beach volleyball player, a professional book reader, a daydreaming virtuoso, and <span>100% </span>beach kiddo. 
                 </p>
               </div>
             </div>
