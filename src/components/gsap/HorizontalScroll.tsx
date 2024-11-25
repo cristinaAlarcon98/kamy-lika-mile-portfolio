@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "./esm/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
 import BlobAnimation from "../others/BlobAnimation";
+import BlobCircle from "../others/BlobCircle";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -40,7 +41,7 @@ function HorizontalScroll() {
           gsap.to(".text-element", {
             scrollTrigger: {
               trigger: windowWidth< 768?  ".pharagraph" :  ".text-element",
-              start:  windowWidth < 768? "bottom+=220px center" :  "center center",
+              start:  windowWidth < 768? "bottom+=210px center" :  "center center",
               end:"+=1000",    
               scrub: 1,
               pin: true,
@@ -57,8 +58,8 @@ function HorizontalScroll() {
     <div className="flex md:flex-row flex-wrap">
          <div className="flex-col md:w-5/12 mt-5 md:mt-0 pr-[10%] ">
              <div className="text-element flex items-end h-[400px] relative">
-             <div className='absolute bottom-[-6rem] left-[-17rem] z-5 w-[400px] h-[400px]'>
-                <BlobAnimation fillColor="var(--secondary)" ></BlobAnimation>
+             <div className='absolute bottom-[-6rem] left-[-13rem] z-5 w-[500px] h-[500px]'>
+                <BlobCircle fillColor="var(--secondary)" ></BlobCircle>
               </div> 
                 <p className="pharagraph text-white text-right relative z-10">
                   The emotionality of the <span>artistic</span> temperament. My field is <span>sports</span>, but my thinking is <span>artistic</span>. These two niches combined into one can reveal <span>undiscovered layers</span>.
