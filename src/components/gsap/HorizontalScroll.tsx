@@ -35,7 +35,7 @@ function HorizontalScroll() {
               trigger: window.innerWidth < 768?  ".pharagraph" :  ".text-element",
               //
               //".pharagraph
-              start:  window.innerWidth < 768? "bottom+=250px center" :  "center center",
+              start:  window.innerWidth < 768? "bottom+=220px center" :  "center center",
               // 
               //"bottom+=250px center",
               end:"+=1000",    
@@ -57,7 +57,7 @@ function HorizontalScroll() {
              <div className='absolute bottom-[-6rem] left-[-17rem] z-5 w-[400px] h-[400px]'>
                 <BlobAnimation fillColor="var(--secondary)" ></BlobAnimation>
               </div> 
-                <p className="pharagraph text-white text-right  z-10">
+                <p className="pharagraph text-white text-right relative z-10">
                   The emotionality of the <span>artistic</span> temperament. My field is <span>sports</span>, but my thinking is <span>artistic</span>. These two niches combined into one can reveal <span>undiscovered layers</span>.
                 </p>
              </div> 
