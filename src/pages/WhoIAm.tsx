@@ -13,38 +13,34 @@ const HorizontalScroll = dynamic(() => import('../components/gsap/HorizontalScro
 export function WhoIamPage() {
  
   return (
-   // <ReactLenis root options={{orientation:'vertical'}}>
-    <div className="pt-[100px] bg-[#000303] min-w-[420px] w-[100wv]">
-    <section className="h-screen flex justify-center items-center">
+  <div className="pt-[100px] bg-[#000303] w-[100vw]">
+    <section className="h-screen w-full flex justify-center items-center">
       <TypeWriterText words={["CREATIVITY", "EMOTIONALITY", "PASSION"]} />
     </section>
 
-        <section className="bg-primary-foreground h-[90vh] p-5 ">
-          <div className="container mx-auto">
-            <div className="flex flex-col md:flex-row pl-[10%]">
-              <div className="w-full md:w-5/12 relative">
-               <div className='absolute bottom-11 left-[-12rem] z-5 w-[55vh] h-[55vh]'>
+    <section className="bg-primary-foreground h-[90vh] w-full ">
+      <div className="flex flex-col md:flex-row pl-[10%]">
+          <div className="md:w-5/12 relative">
+              <div className='absolute bottom-11 left-[-12rem] z-5 w-[500px] h-[500px]'>
                 <BlobAnimation fillColor="var(--secondary)" ></BlobAnimation>
-                </div> 
-                <img src="/images/volley.png" 
+              </div> 
+              <img src="/images/volley.png" 
                   alt="Volleyball Image" 
-                  className="h-[60vh] w-auto relative z-10" />
+                  className="h-[500px] w-auto relative z-10" />
               </div>
               <div className="w-full md:w-7/12 mt-5 md:mt-0  px-[10%] flex items-end	">
                 <p className="text-white text-right">
                   Creativity encompasses the  ability to  the  ability to discover new and <span >original ideas</span>, connections, and solutions to problems. My judgments are <span>insightful</span> and my perceptions are <span>fresh</span> .
                 </p>
-              </div>
-            </div>
+          </div>
           </div>
         </section>
 
 
-        <section className="bg-primary-foreground h-[500vh] p-5 mb-[200px]">
-          <div className="container mx-auto">
+        <section className="bg-primary-foreground  p-5 mb-[200px]">
+          {/* <div className="container mx-auto"> */}
           <HorizontalScroll></HorizontalScroll>
-
-          </div>
+          {/* </div> */}
         </section>
 
         <section className="bg-primary-foreground h-[100vh] p-5  ">
@@ -65,9 +61,8 @@ export function WhoIamPage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> 
         </div>
-  //      </ReactLenis>
    
   );
 }

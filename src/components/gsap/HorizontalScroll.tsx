@@ -16,12 +16,12 @@ function HorizontalScroll() {
       () => {
           // gsap code here...
           gsap.to(".slides", {
-            x:'-60vw',
+            x: window.innerWidth < 768? '-70vh':'-65vh',
             scrollTrigger: {
               trigger: ".slides-container",
               start: "center center",
              // end: "bottom center",     
-             end:"+=3000",
+             end:"+=1000",
               scrub: 1,
               pin: true,
              // 
@@ -32,43 +32,50 @@ function HorizontalScroll() {
           gsap.to(".text-element", {
            // x: -(850),
             scrollTrigger: {
-              trigger: ".text-element",
-              start: "center center",
-              end:"+=3000",    
+              trigger: window.innerWidth < 768?  ".pharagraph" :  ".text-element",
+              //
+              //".pharagraph
+              start:  window.innerWidth < 768? "bottom+=250px center" :  "center center",
+              // 
+              //"bottom+=250px center",
+              end:"+=1000",    
               scrub: 1,
               pin: true,
-             // markers: true
+              markers: true
             }
           }); 
       },
+
+     
       { }
   ); 
 
   return (
-    <div className="flex  md:flex-row ">
+    <div className="flex md:flex-row flex-wrap">
          <div className="flex-col md:w-5/12 mt-5 md:mt-0 pr-[10%] ">
-             <div className="text-element flex items-end h-[60vh]">
-                <div className='absolute bottom-[-150px] left-[-23rem] z-5 w-[80vh] h-[80vh]'>
-                   <BlobCircle fillColor="#5781b7"  ></BlobCircle>
-                </div>
-                <p className="text-white text-right  z-10">
+             <div className="text-element flex items-end h-[400px] relative">
+             <div className='absolute bottom-[-6rem] left-[-17rem] z-5 w-[400px] h-[400px]'>
+                <BlobAnimation fillColor="var(--secondary)" ></BlobAnimation>
+              </div> 
+                <p className="pharagraph text-white text-right  z-10">
                   The emotionality of the <span>artistic</span> temperament. My field is <span>sports</span>, but my thinking is <span>artistic</span>. These two niches combined into one can reveal <span>undiscovered layers</span>.
                 </p>
              </div> 
         </div> 
          <div  className="square flex-col md:w-7/12  pl-[5%] "> 
-            <div className="slides-container overflow-hidden ">
+            <div className="slides-container overflow-hidden  h-[400px]">
                 <div className="slides flex space-x-4 ">
-                    <img src="/images/volley.png" alt="Volleyball Image" className="h-[60vh] w-auto" />
-                    <img src="/images/volley.png" alt="Volleyball Image" className="h-[60vh] w-auto" />
-                    <img src="/images/volley.png" alt="Volleyball Image" className="h-[60vh] w-auto" />
-                    <img src="/images/volley.png" alt="Volleyball Image" className="h-[60vh] w-auto" />
+                    <img src="/images/volley.png" alt="Volleyball Image" className="h-[400px]" />
+                    <img src="/images/volley.png" alt="Volleyball Image" className="h-[400px]" />
+                    <img src="/images/volley.png" alt="Volleyball Image" className="h-[400px]" />
+                    <img src="/images/volley.png" alt="Volleyball Image" className="h-[400px]" />
                 </div>
              </div> 
         </div>
     </div>
    
   );
+
 };
 
 export default HorizontalScroll;
