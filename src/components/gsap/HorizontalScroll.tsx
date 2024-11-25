@@ -1,9 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "./esm/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
 import BlobAnimation from "../others/BlobAnimation";
-import BlobCircle from "../others/BlobCircle";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -11,33 +10,37 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 function HorizontalScroll() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth)
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  },[])
+
+
 
     useGSAP(
       () => {
-          // gsap code here...
           gsap.to(".slides", {
             x: window.innerWidth < 768? '-70vh':'-65vh',
             scrollTrigger: {
               trigger: ".slides-container",
               start: "center center",
-             // end: "bottom center",     
              end:"+=1000",
               scrub: 1,
               pin: true,
-             // 
+            
              //markers: true
             }
           }); 
     
           gsap.to(".text-element", {
-           // x: -(850),
             scrollTrigger: {
-              trigger: window.innerWidth < 768?  ".pharagraph" :  ".text-element",
-              //
-              //".pharagraph
-              start:  window.innerWidth < 768? "bottom+=220px center" :  "center center",
-              // 
-              //"bottom+=250px center",
+              trigger: windowWidth< 768?  ".pharagraph" :  ".text-element",
+              start:  windowWidth < 768? "bottom+=220px center" :  "center center",
               end:"+=1000",    
               scrub: 1,
               pin: true,
