@@ -7,15 +7,28 @@ import IconButton from '@mui/material/IconButton';
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState<number | null>(null); // Start with null
 
   useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth)
+    // Check if window is available (for SSR compatibility)
+    if (typeof window !== 'undefined') {
+      const handleResize = () => setWindowWidth(window.innerWidth);
 
-    window.addEventListener('resize', handleResize);
+      // Set initial window width when component mounts
+      setWindowWidth(window.innerWidth);
 
-    return () => window.removeEventListener('resize', handleResize);
-  },[])
+      window.addEventListener('resize', handleResize); // Listen for resize events
+
+      // Cleanup event listener on unmount
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  }, []); // Empty dependency array to run only once when mounted
+
+  // Early return if windowWidth is null (still loading)
+  if (windowWidth === null) {
+    return null; // Or you can return a loading spinner, e.g., <div>Loading...</div>
+  }
+
 
   return (
     <ReactLenis root>
