@@ -11,15 +11,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 function HorizontalScroll() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth)
+  // useEffect(() => {
+  //   const handleResize = () => setWindowWidth(window.innerWidth)
 
-    window.addEventListener('resize', handleResize);
+  //   window.addEventListener('resize', handleResize);
 
-    return () => window.removeEventListener('resize', handleResize);
-  },[])
+  //   return () => window.removeEventListener('resize', handleResize);
+  // },[])
 
 
 
@@ -40,8 +40,8 @@ function HorizontalScroll() {
     
           gsap.to(".text-element", {
             scrollTrigger: {
-              trigger: windowWidth< 768?  ".pharagraph" :  ".text-element",
-              start:  windowWidth < 768? "bottom+=210px center" :  "center center",
+              trigger: window.innerWidth < 768?  ".pharagraph" :  ".text-element",
+              start:  window.innerWidth  < 768? "bottom+=210px center" :  "center center",
               end:"+=1000",    
               scrub: 1,
               pin: true,
