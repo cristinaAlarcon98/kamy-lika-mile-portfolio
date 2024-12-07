@@ -18,7 +18,7 @@ export function WhoIamPage() {
       <TypeWriterText words={["CREATIVITY", "EMOTIONALITY", "PASSION"]} />
     </section>
 
-    <section className="bg-primary-foreground h-[90vh] w-full ">
+    <section className="bg-primary-foreground h-[100vh] w-full">
       <div className="flex flex-col md:flex-row pl-[10%]">
           <div className="md:w-5/12 relative">
               <div className='absolute bottom-11 left-[-12rem] z-5 w-[500px] h-[500px]'>
@@ -37,15 +37,15 @@ export function WhoIamPage() {
         </section>
 
 
-        <section className="bg-primary-foreground  p-5 mb-[200px]">
+        <section className="bg-primary-foreground   p-5 mb-[200px]">
           {/* <div className="container mx-auto"> */}
           <HorizontalScroll></HorizontalScroll>
           {/* </div> */}
         </section>
 
-        <section className="bg-primary-foreground h-[100vh] p-5  ">
+        <section className="bg-primary-foreground h-[80vh] p-5  ">
           <div className="container mx-auto">
-            <div className="flex flex-col md:flex-row pl-[10%]">
+            <div className="flex flex-col md:flex-row pl-[10%]" >
               <div className="w-full md:w-5/12 relative">
                <div className='absolute bottom-11 left-[-12rem] z-5 w-[55vh] h-[55vh]'>
                 <BlobAnimation  fillColor='#3f72b1'></BlobAnimation>

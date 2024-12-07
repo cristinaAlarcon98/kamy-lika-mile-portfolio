@@ -26,11 +26,11 @@ function HorizontalScroll() {
     useGSAP(
       () => {
           gsap.to(".slides", {
-            x: window.innerWidth < 768? '-70vh':'-65vh',
+            x: window.innerWidth < 768? '-70vw':'-60vw',
             scrollTrigger: {
               trigger: ".slides-container",
               start: "center center",
-             end:"+=1000",
+             end:"+=1500",
               scrub: 1,
               pin: true,
             
@@ -40,15 +40,16 @@ function HorizontalScroll() {
     
           gsap.to(".text-element", {
             scrollTrigger: {
-              trigger: window.innerWidth < 768?  ".pharagraph" :  ".text-element",
-              start:  window.innerWidth  < 768? "bottom+=210px center" :  "center center",
-              end:"+=1000",    
+              trigger: window.innerWidth < 767?  ".pharagraph" :  ".text-element",
+              start:  window.innerWidth  < 768? "bottom+=260px center" :  "center center",
+              end:"+=1500",    
               scrub: 1,
               pin: true,
-             // markers: true
+              markers: true
             }
           }); 
-      },
+      }, 
+    //[]
 
      
       { }
@@ -57,7 +58,7 @@ function HorizontalScroll() {
   return (
     <div className="flex md:flex-row flex-wrap">
          <div className="flex-col md:w-5/12 mt-5 md:mt-0 pr-[10%] ">
-             <div className="text-element flex items-end h-[400px] relative">
+             <div className="text-element flex items-end h-[500px] relative">
              <div className='absolute bottom-[-6rem] left-[-13rem] z-5 w-[500px] h-[500px]'>
                 <BlobCircle fillColor="var(--secondary)" ></BlobCircle>
               </div> 
@@ -67,12 +68,12 @@ function HorizontalScroll() {
              </div> 
         </div> 
          <div  className="square flex-col md:w-7/12  pl-[5%] "> 
-            <div className="slides-container overflow-hidden  h-[400px]">
+            <div className="slides-container overflow-hidden  h-[500px]">
                 <div className="slides flex space-x-4 ">
-                    <img src="/images/volley.png" alt="Volleyball Image" className="h-[400px]" />
-                    <img src="/images/volley.png" alt="Volleyball Image" className="h-[400px]" />
-                    <img src="/images/volley.png" alt="Volleyball Image" className="h-[400px]" />
-                    <img src="/images/volley.png" alt="Volleyball Image" className="h-[400px]" />
+                    <img src="/images/volley.png" alt="Volleyball Image" className="h-[500px]" />
+                    <img src="/images/volley.png" alt="Volleyball Image" className="h-[500px]" />
+                    <img src="/images/volley.png" alt="Volleyball Image" className="h-[500px]" />
+                    <img src="/images/volley.png" alt="Volleyball Image" className="h-[500px]" />
                 </div>
              </div> 
         </div>

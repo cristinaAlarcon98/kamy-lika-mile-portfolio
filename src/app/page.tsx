@@ -54,7 +54,7 @@ export default function Home() {
       cursor: 'pointer'
     }}>
      <IconButton >
-      <MenuRoundedIcon  style={{color:'#c1b956'}}  />
+      <MenuRoundedIcon  style={{color:'#c1b956', }}  />
      </IconButton>
     </div>
     <WhoIam/>
