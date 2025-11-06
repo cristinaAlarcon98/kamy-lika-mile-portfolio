@@ -8,6 +8,9 @@ It was built using **Next.js** and **GSAP** to create a smooth, modern, and anim
 This portfolio was inspired by the design and structure of my own portfolio:  
 👉 [https://new-portfolio-cristina.netlify.app/](https://new-portfolio-cristina.netlify.app/)
 
+The final version of Kamy’s portfolio can be viewed here:  
+👉 [https://kamylikamile-test.netlify.app/](https://kamylikamile-test.netlify.app/)
+
 It serves as a customized version adapted for Kamy Lika Mile, focusing on minimal design, elegant transitions, and clear presentation of content.  
 The project combines **Next.js** for performance and routing with **GSAP** for animation and scroll effects.
 
@@ -33,5 +36,6 @@ Then open your browser and visit:
 ```
 http://localhost:3000
 ```
+
 
 
